@@ -1,0 +1,8 @@
+.bulltax code {
+  color: #666; }
+
+[class*="bracket"] {
+  color: purple; }
+
+[class*="dots"] {
+  color: #cccccc; }
