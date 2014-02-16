@@ -9,7 +9,7 @@ function bulltax(){
 		$lang = $bull.find('code');
 
 		// UI fix
-		// It get the class of the children (code) to the parent class ($this = pre), so pre = pre.bulltax.html / pre.bulltax.css / pre.bulltax.js
+		// It give the class of the children (code) to the parent class ($this = pre), so pre = pre.bulltax.html / pre.bulltax.css / pre.bulltax.js
 		$bull.each(function () {
 			var $this = $(this),
 			$childClass = $this.find('code').attr('class');
