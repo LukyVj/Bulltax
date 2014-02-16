@@ -1,119 +1,64 @@
-/* Clearfix */
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
+/*
+Syntax error: Invalid CSS after "}.": expected class name, was "5em 1em;"
+        on line 88 of ./style.scss
 
-.clearfix {
-  display: block; }
+83:         border-color: #2ecc71;
+84:     }
+85:     &.javascript {
+86:         border-color: #9b59b6;
+87:     }
+88: }.5em 1em;
+89:             box-shadow: 3px 3px 0px black;
+90:             transition: all 0.2s ease-in-out;
+91:             font-size: .8em;
+92:             margin: auto .5em;
+93:             position: relative;
 
-html[xmlns] .clearfix {
-  display: block; }
-
-* html .clearfix {
-  height: 1%; }
-
-body, html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Garamond;
-  font-size: 1.2em; }
-
-.contain {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0; }
-  .contain h1 {
-    text-align: center; }
-  .contain section {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0; }
-    .contain section p {
-      text-align: center; }
-    .contain section img.logo {
-      width: 20vw;
-      margin: auto;
-      display: block; }
-  .contain ul.nav {
-    margin: 5vh auto;
-    width: 50vw;
-    display: block;
-    clear: both; }
-    .contain ul.nav li {
-      float: left;
-      width: auto;
-      display: block;
-      margin: 0.2em;
-      padding: 1em;
-      background: rgba(255, 255, 255, 0.3);
-      text-transform: uppercase;
-      display: inline-block;
-      text-align: center;
-      letter-spacing: 1px;
-      margin: 0em auto;
-      background-color: #fff;
-      border: 1px solid black;
-      outline: none;
-      height: 1em;
-      padding: 0.5em 1em;
-      box-shadow: 3px 3px 0px black;
-      transition: all 0.2s ease-in-out;
-      font-size: .8em;
-      margin: auto 0.5em;
-      position: relative; }
-      .contain ul.nav li a {
-        text-decoration: none;
-        color: #000; }
-      .contain ul.nav li:hover {
-        background-color: #1dd2af;
-        color: white;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out; }
-        .contain ul.nav li:hover a {
-          color: #fff; }
-        .contain ul.nav li:hover:active {
-          box-shadow: 0 0 0;
-          top: 3px;
-          left: 3px; }
-  .contain footer {
-    width: 100%;
-    display: block;
-    float: left;
-    text-align: center;
-    height: 2em; }
-    .contain footer a {
-      padding: 1em; }
-
-/* for demo grids */
-[class*="v-g"] > div {
-  background: #95a5a6; }
-[class*="v-g"] [class*="vg-"]:after {
-  content: attr(class);
-  display: block;
-  text-align: center;
-  font-size: 1.5em;
-  line-height: 3;
-  color: #fff;
-  font-family: courier; }
-[class*="v-g"] [class*="vg-2"] {
-  background: #1dd2af; }
-[class*="v-g"] [class*="vg-3"] {
-  background: #3498db; }
-[class*="v-g"] [class*="vg-4"] {
-  background: #e67e22; }
-[class*="v-g"] [class*="vg-5"] {
-  background: #e74c3c; }
-[class*="v-g"] [class*="vg-6"] {
-  background: #2c3e50; }
-[class*="v-g"] [class*="vg-7"] {
-  background: #34495e; }
-[class*="v-g"] [class*="vg-8"] {
-  background: #f39c12; }
+Backtrace:
+./style.scss:88
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:1136:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:1072:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:1054:in `expr!'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:698:in `class_selector'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:660:in `simple_selector_sequence'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:628:in `_selector'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:607:in `selector'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:591:in `selector_sequence'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:516:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:541:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:534:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/scss/parser.rb:27:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:342:in `_to_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:299:in `watch'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:95:in `initialize_adapter'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:31:in `initialize'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:31:in `new'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:44:in `start'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin/compiler.rb:307:in `watch'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin.rb:107:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/exec.rb:444:in `watch_or_update'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/exec.rb:307:in `process_result'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.5/bin/sass:8
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"}.\": expected class name, was \"5em 1em;\"\A         on line 88 of ./style.scss\A \A 83:         border-color: #2ecc71;\A 84:     }\A 85:     &.javascript {\A 86:         border-color: #9b59b6;\A 87:     }\A 88: }.5em 1em;\A 89:             box-shadow: 3px 3px 0px black;\A 90:             transition: all 0.2s ease-in-out;\A 91:             font-size: .8em;\A 92:             margin: auto .5em;\A 93:             position: relative;"; }
