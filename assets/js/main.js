@@ -8,7 +8,8 @@ function bulltax(){
 	var $bull = $('pre.bulltax'),
 		$lang = $bull.find('code');
 
-		//UI fix
+		// UI fix
+		// It get the class of the children (code) to the parent class ($this = pre), so pre = pre.bulltax.html / pre.bulltax.css / pre.bulltax.js
 		$bull.each(function () {
 			var $this = $(this),
 			$childClass = $this.find('code').attr('class');
@@ -16,7 +17,7 @@ function bulltax(){
 		});
 
 
-
+			// HTML syntax
 			var $lang = $('pre.bulltax code.html');
 			$html = $lang,
 			$htmlVal = $html.text(),
@@ -27,7 +28,7 @@ function bulltax(){
 			$html.empty().html($a);
 
 
-
+			// CSS syntax
 			var $lang = $('pre.bulltax code.css');
 			$css = $lang,
 			$cssVal = $css.text(),
@@ -40,7 +41,7 @@ function bulltax(){
 			$css.empty().html($b);
 
 
-
+			//Javascript syntax
 			var $lang = $('pre.bulltax code.javascript');
 			$js = $lang,
 			$jsVal = $js.text(),
